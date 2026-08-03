@@ -1,0 +1,312 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "tables": [
+        {
+            "url": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/dataset/tsv/heinsius_01_GS158_by_page.tsv",
+            "dialect": {
+                "delimiter": "\t"
+            },
+            "aboutUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/page/{id}",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "name": "id",
+                        "titles": "id",
+                        "dc:description": "The id is unique identifier for a row in a csv. It has 7 numbers preceded by a p",
+                        "propertyUrl": "http://purl.org/dc/terms/identifier",
+                        "datatype": {
+                            "format": "^(p[0-9]{7})$"
+                        }
+                    },
+                    {
+                        "name": "matter_type",
+                        "titles": "matter_type",
+                        "propertyUrl": "http://www.essepuntato.it/2008/12/pattern#contains",
+                        "valueUrl": "http://purl.org/spar/doco/{matter_type}",
+                        "dc:description": "A page in the book is FrontMatter (voorwerk, table of content, introduction, etc.), BodyMatter (the real content) or BackMatter (appendix, bibliography, index, etc.).",
+                        "datatype": {
+                            "format": "^(FrontMatter|BodyMatter|BackMatter)$"
+                        }
+                    },
+                    {
+                        "name": "page_number",
+                        "titles": "page_number",
+                        "dc:description": "page number (locator) is the number of the page as ,mentioned the Table of Content. It reflects the number of the page that the item starts on.",
+                        "datatype": {
+                            "format": "^[A-Za-z0-9]+$"
+                        },
+                        "propertyUrl": "http://purl.org/ontology/bibo/locator",
+                        "separator": ";"
+                    },
+                    {
+                        "name": "file_number",
+                        "titles": "file_number",
+                        "dc:description": "file_number is the number that is used in the filename. It reflects the actual pagenumber in the book.",
+                        "datatype": {
+                            "base": "string",
+                            "format": "^[0-9|i|I|v|V|x|X]+$"
+                        },
+                        "propertyUrl": "http://purl.org/ontology/bibo/locator"
+                    },
+                    {
+                        "name": "filebasename",
+                        "titles": "filebasename",
+                        "dc:description": "The filebasename of the file containing the OCR without extension.",
+                        "datatype": {
+                            "base": "string",
+                            "format": "^([A-Za-z0-9_]+_[0-9|i|I|v|V|x|X]+)+$"
+                        },
+                        "propertyUrl": "https://herwaarts.nl/resources/vocab/fileObject#fileBasename",
+                        "rdfs:subPropertyOf": "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileName"
+                    },
+                    {
+                        "name": "canonical_url",
+                        "titles": "canonical_url",
+                        "datatype": "anyURI",
+                        "propertyUrl": "schema:contentUrl",
+                        "dc:format": "application/pdf",
+                        "dc:description": "Canonical PDF representation of the page"
+                    },
+                    {
+                        "name": "pdf_url",
+                        "titles": "pdf_url",
+                        "dc:description": "The URL of the PDF of the page.",
+                        "datatype": "anyURI",
+                        "propertyUrl": "schema:associatedMedia",
+                        "dc:format": "application/pdf",
+                        "separator": ";"
+                    },
+                    {
+                        "name": "image_url",
+                        "titles": "image_url",
+                        "dc:description": "The URL of the page as the image.",
+                        "datatype": "anyURI",
+                        "propertyUrl": "schema:associatedMedia",
+                        "dc:format": "image/jpeg",
+                        "separator": ";"
+                    },
+                    {
+                        "name": "tiff_url",
+                        "titles": "tiff_url",
+                        "dc:description": "The URL of the page as tiff.",
+                        "datatype": "anyURI",
+                        "propertyUrl": "schema:associatedMedia",
+                        "dc:format": "image/tiff",
+                        "separator": ";"
+                    },
+                    {
+                        "name": "html_url",
+                        "titles": "html_url",
+                        "dc:description": "The URL of the html of the page.",
+                        "datatype": "anyURI",
+                        "propertyUrl": "schema:associatedMedia",
+                        "dc:format": "text/html",
+                        "separator": ";"
+                    },
+                    {
+                        "name": "ocr_v1_url",
+                        "titles": "ocr_v1_url",
+                        "dc:description": "The OCR of the page as it was made approx. 2014 saved as html.",
+                        "datatype": "anyURI",
+                        "propertyUrl": "schema:associatedMedia",
+                        "dc:format": "text/plain"
+                    },
+                    {
+                        "name": "ocr_v2",
+                        "titles": "ocr_v2",
+                        "dc:description": "The OCR of the page as it was made after 2022.",
+                        "propertyUrl": "schema:text",
+                        "dc:type": "OCR",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "level_0_heading",
+                        "titles": "level_0_heading",
+                        "dc:description": "A heading of a section of a book.",
+                        "datatype": "string",
+                        "propertyUrl": "schema:headline",
+                        "separator": ";"
+                    },
+                    {
+                        "name": "level_1_heading",
+                        "titles": "level_1_heading",
+                        "dc:description": "A heading of a sub section of a book..",
+                        "datatype": "string",
+                        "propertyUrl": "schema:headline",
+                        "separator": ";"
+                    },
+                    {
+                        "name": "item_number",
+                        "suppressOutput": true
+                    },
+                    {
+                        "name": "title",
+                        "titles": "title",
+                        "datatype": "string",
+                        "propertyUrl": "dcterms:title",
+                        "dcterms:creator": "editor",
+                        "dc:description": "Editorial title assigned to the letter or item.",
+                        "aboutUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/item/{item_number}",
+                        "separator": ";"
+                    },
+                    {
+                        "name": "item_from",
+                        "titles": "item_from",
+                        "dc:description": "The name and/or the title of the person who sent the item (f.i. a letter).",
+                        "datatype": "string",
+                        "propertyUrl": "https://schema.org/creator",
+                        "aboutUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/item/{item_number}",
+                        "separator": ";"
+                    },
+                    {
+                        "name": "item_to",
+                        "titles": "item_to",
+                        "dc:description": "The name and/or the title of the person who recieved the item (f.i. a letter).",
+                        "datatype": "string",
+                        "propertyUrl": "https://schema.org/recipient",
+                        "aboutUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/item/{item_number}",
+                        "separator": ";"
+                    },
+                    {
+                        "name": "date_as_stated",
+                        "titles": "date_as_stated",
+                        "dc:description": "The date as it is in the source.",
+                        "propertyUrl": "schema:temporalCoverage",
+                        "aboutUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/item/{item_number}",
+                        "datatype": "string",
+                        "separator": ";"
+                    },
+                    {
+                        "name": "date_as_object",
+                        "titles": "date_as_object",
+                        "dc:description": "Temporal information as structured object. All the elements of the date as JSON object. Subject to availability: the year(s), month(s)and day(s) with relations like '-' and 'en', indication of confidence like '?' and the style like 'OS' and 'NS'.",
+                        "datatype": "string",
+                        "propertyUrl": "dcterms:temporal",
+                        "aboutUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/item/{item_number}",
+                        "separator": ";"
+                    },
+                    {
+                        "name": "date_as_formatted",
+                        "titles": "date_as_formatted",
+                        "dc:description": "The earliest date dat can be extracted from the 'date as object' Normalized in ISO 8601 format e.g. yyyy-mm-dd, 1959-06-06",
+                        "datatype": {
+                            "base": "string",
+                            "format": "^([0-9]{4}|XXXX)-(1[0-2]|0[1-9]|XX)-(0[1-9]|1[0-9]|2[0-9]|3[0-1]|XX)$"
+                        },
+                        "required": false,
+                        "null": "",
+                        "propertyUrl": "dc:date",
+                        "aboutUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/item/{item_number}",
+                        "separator": ";"
+                    },
+                    {
+                        "name": "place",
+                        "titles": "place",
+                        "dc:description": "Place mentioned in an item title or an index.",
+                        "datatype": "string",
+                        "propertyUrl": "schema:contentLocation",
+                        "aboutUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/item/{item_number}",
+                        "separator": ";"
+                    },
+                    {
+                        "name": "footnote",
+                        "titles": "footnote",
+                        "dc:description": "One or more footnotes from a page extracted with regular expression.",
+                        "http://www.essepuntato.it/2008/12/pattern#containsdatatype": "string",
+                        "separator": ";"
+                    },
+                    {
+                        "name": "fline",
+                        "suppressOutput": true
+                    },
+                    {
+                        "name": "previous_filebasename",
+                        "titles": "previous_filebasename",
+                        "dc:description": "The filebasename of the privious page, without the extension.",
+                        "propertyUrl": "https://herwaarts.nl/resources/vocab/fileObject#previous_filebasename",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "next_filebasename",
+                        "titles": "next_filebasename",
+                        "dc:description": "The filebasename of the next page, without the extension.",
+                        "propertyUrl": "https://herwaarts.nl/resources/vocab/fileObject#next_filebasename",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "bibrec",
+                        "titles": "bibrec",
+                        "dc:description": "The bibliographical record for a page in the book",
+                        "propertyUrl": "http://purl.org/dc/terms/bibliographicCitation",
+                        "datatype": "json",
+                        "dc:format": "application/json"
+                    },
+                    {
+                        "virtual": true,
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "http://purl.org/spar/fabio/Page"
+                    },
+                    {
+                        "virtual": true,
+                        "propertyUrl": "http://purl.org/spar/fabio/isPageOf",
+                        "valueUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/dataset/tsv/heinsius_01_GS158_by_page.tsv"
+                    },
+                    {
+                        "virtual": true,
+                        "aboutUrl": "{canonical_url}",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "schema:MediaObject"
+                    },
+                    {
+                        "virtual": true,
+                        "aboutUrl": "{canonical_url}",
+                        "propertyUrl": "schema:encodingFormat",
+                        "default": "application/pdf"
+                    },
+                    {
+                        "virtual": true,
+                        "aboutUrl": "{canonical_url}",
+                        "propertyUrl": "dc:relation",
+                        "valueUrl": "http://purl.org/dc/terms/hasFormat",
+                        "dc:description": "Canonical format"
+                    },
+                    {
+                        "virtual": true,
+                        "aboutUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/item/{item_number}",
+                        "propertyUrl": "rdf:type",
+                        "valueUrl": "http://purl.org/spar/fabio/Letter"
+                    },
+                    {
+                        "virtual": true,
+                        "aboutUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/page/{id}",
+                        "propertyUrl": "http://www.essepuntato.it/2008/12/pattern#contains",
+                        "valueUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/item/{item_number}"
+                    },
+                    {
+                        "virtual": true,
+                        "aboutUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/item/{item_number}",
+                        "propertyUrl": "http://www.essepuntato.it/2008/12/pattern#isContainedBy",
+                        "valueUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/page/{id}"
+                    }
+                ]
+            }
+        }
+    ],
+    "notes": [
+        {
+            "@id": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/book",
+            "@type": "http://purl.org/spar/fabio/Book",
+            "dc:title": "De briefwisseling van Anthonie Heinsius, 1702-1720. Deel I: 19 maart - 31 december 1702. (Rijks Geschiedkundige Publicatiën. Grote serie; 158. Deel 1) - 1976",
+            "dc:description": "Uitgave van brieven van en aan de raadpensionaris van Holland, Anthonie Heinsius, die in de praktijk leiding gaf aan de buitenlandse politiek van de Republiek der Verenigde Nederlanden.",
+            "dc:creator": "0000000109135890 A.J. Veenendaal, jr.",
+            "dcterms:date": "1976",
+            "dcterms:coverage": "1702",
+            "dcterms:publisher": "Martinus Nijhoff",
+            "schema:numberOfPages": "699",
+            "schema:maintainer": {
+                "schema:name": "Huygens Instituut",
+                "@type": "schema:ResearchOrganization"
+            }
+        }
+    ]
+}
