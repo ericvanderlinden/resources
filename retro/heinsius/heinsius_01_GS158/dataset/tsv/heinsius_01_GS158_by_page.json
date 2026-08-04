@@ -296,7 +296,7 @@
         {
             "@id": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/book",
             "@type": "http://purl.org/spar/fabio/Book",
-            "dc:title": "De briefwisseling van Anthonie Heinsius, 1702-1720. Deel I: 19 maart - 31 december 1702. (Rijks Geschiedkundige Publicatiën. Grote serie; 158. Deel 1) - 1976",
+            "dc:title": "De briefwisseling van Anthonie Heinsius, 1702-1720. Deel I: 19 maart - 31 december 1702. - 1976",
             "dc:description": "Uitgave van brieven van en aan de raadpensionaris van Holland, Anthonie Heinsius, die in de praktijk leiding gaf aan de buitenlandse politiek van de Republiek der Verenigde Nederlanden.",
             "dc:creator": "0000000109135890 A.J. Veenendaal, jr.",
             "dcterms:date": "1976",
