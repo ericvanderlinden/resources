@@ -30,4 +30,4 @@ jobs:
     - name: Install Python dependencies
       run: pip install pyvips duckdb
     - name: Run conversion script
-      run: python scripts/generate_manifest.py
+      run: python scripts/process_iiif.py
