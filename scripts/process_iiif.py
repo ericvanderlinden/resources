@@ -22,7 +22,7 @@ def process_book():
     # Sort files numerically/alphabetically (e.g., page_001.tif)
     # pages = sorted([f for f in os.listdir(book_path) if f.lower().endswith(('.tif', '.tiff'))])
     
-    pages = duckdb.sql("SELECT filebasename FROM '{}' ".format(CSV_PATH).fetchnumpy()['filebasename']
+    pages = duckdb.sql("SELECT filebasename FROM '{}' ".format(CSV_PATH)).fetchnumpy()['filebasename']
     
     for page in pages:
         page_id = page
