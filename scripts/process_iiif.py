@@ -9,10 +9,10 @@ workspace = os.getenv("GITHUB_WORKSPACE", ".")
 GROUP = "retro"
 SERIES = "heinsius"
 BOOK = "heinsius_01_GS158"
-BASE_URL = f"http://jbw.do.local/{GROUP}/{SERIES}/{BOOK}/public/iiif"
-IMAGE_DIR = os.path.join(workspace, f"{GROUP}/{SERIES}/{BOOK}/tiff")
-OUTPUT_DIR = os.path.join(workspace, f"{GROUP}/{SERIES}/{BOOK}/public/iiif")
-CSV_PATH = os.path.join(workspace, "{GROUP}/{SERIES}/{BOOK}/dataset/csv/{BOOK}_by_page.csv")
+BASE_URL = f"http://jbw.do.local/{}/{}/{}/public/iiif".format(GROUP,SERIES,BOOK)
+IMAGE_DIR = os.path.join(workspace, f"{}/{}/{}/tiff".format(GROUP,SERIES,BOOK))
+OUTPUT_DIR = os.path.join(workspace, f"{}/{}/{}/public/iiif".format(GROUP,SERIES,BOOK))
+CSV_PATH = os.path.join(workspace, "{}/{}/{}/dataset/csv/{}_by_page.csv".format(GROUP,SERIES,BOOK,BOOK))
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def process_book():
