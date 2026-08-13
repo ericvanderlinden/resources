@@ -7,24 +7,19 @@ on:
   push:
     branches: [ "main" ]
 
-permissions:
-  contents: read
+permissions: write-all
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v4
     - name: Install system dependencies
       run: sudo apt-get update && sudo apt-get install -y libvips-dev
-
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.12'
-
     - name: Install Python dependencies
       run: pip install pyvips duckdb
     - name: Run conversion script
