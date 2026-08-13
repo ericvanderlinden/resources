@@ -5,13 +5,13 @@ import duckdb
 
 # Configuration
 p = os.getcwd()
+workspace = os.getenv("GITHUB_WORKSPACE", ".")
 GROUP = "retro"
 SERIES = "heinsius"
 BOOK = "heinsius_01_GS158"
 BASE_URL = f"http://jbw.do.local/{GROUP}/{SERIES}/{BOOK}/public/iiif"
-IMAGE_DIR = f"../{GROUP}/{SERIES}/{BOOK}/tiff"
-OUTPUT_DIR = f"../{GROUP}/{SERIES}/{BOOK}/public/iiif"
-
+IMAGE_DIR = os.path.join(workspace, f"{GROUP}/{SERIES}/{BOOK}/tiff")
+OUTPUT_DIR = os.path.join(workspace, f"{GROUP}/{SERIES}/{BOOK}/public/iiif")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def process_book():
@@ -20,7 +20,8 @@ def process_book():
     
     # Sort files numerically/alphabetically (e.g., page_001.tif)
     # pages = sorted([f for f in os.listdir(book_path) if f.lower().endswith(('.tif', '.tiff'))])
-    pages = duckdb.sql(f"SELECT filebasename FROM '../{GROUP}/{SERIES}/{BOOK}/dataset/csv/{BOOK}_by_page.csv' ").fetchnumpy()['filebasename']
+    csv_path = os.path.join(workspace, "{GROUP}/{SERIES}/{BOOK}/dataset/csv/{BOOK}_by_page.csv")
+    pages = duckdb.sql(f"SELECT filebasename FROM '{csv_path}' ").fetchnumpy()['filebasename']
     
     for page in pages:
         page_id = page
