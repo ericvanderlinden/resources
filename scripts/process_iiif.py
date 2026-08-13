@@ -9,9 +9,9 @@ workspace = os.getenv("GITHUB_WORKSPACE", ".")
 GROUP = "retro"
 SERIES = "heinsius"
 BOOK = "heinsius_01_GS158"
-BASE_URL = f"http://jbw.do.local/{}/{}/{}/public/iiif".format(GROUP,SERIES,BOOK)
-IMAGE_DIR = os.path.join(workspace, f"{}/{}/{}/tiff".format(GROUP,SERIES,BOOK))
-OUTPUT_DIR = os.path.join(workspace, f"{}/{}/{}/public/iiif".format(GROUP,SERIES,BOOK))
+BASE_URL = "http://jbw.do.local/{}/{}/{}/public/iiif".format(GROUP,SERIES,BOOK)
+IMAGE_DIR = os.path.join(workspace, "{}/{}/{}/tiff".format(GROUP,SERIES,BOOK))
+OUTPUT_DIR = os.path.join(workspace, "{}/{}/{}/public/iiif".format(GROUP,SERIES,BOOK))
 CSV_PATH = os.path.join(workspace, "{}/{}/{}/dataset/csv/{}_by_page.csv".format(GROUP,SERIES,BOOK,BOOK))
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -22,7 +22,7 @@ def process_book():
     # Sort files numerically/alphabetically (e.g., page_001.tif)
     # pages = sorted([f for f in os.listdir(book_path) if f.lower().endswith(('.tif', '.tiff'))])
     
-    pages = duckdb.sql(f"SELECT filebasename FROM '{CSV_PATH}' ").fetchnumpy()['filebasename']
+    pages = duckdb.sql("SELECT filebasename FROM '{}' ".format(CSV_PATH).fetchnumpy()['filebasename']
     
     for page in pages:
         page_id = page
