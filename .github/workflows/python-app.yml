@@ -21,6 +21,6 @@ jobs:
       with:
         python-version: '3.12'
     - name: Install Python dependencies
-      run: pip install pyvips duckdb
+      run: pip install pyvips pandas
     - name: Run conversion script
       run: python scripts/process_iiif.py
