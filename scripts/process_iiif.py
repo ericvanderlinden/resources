@@ -75,7 +75,8 @@ def process_book():
                 }]
             }]
         })
-
+        if "270" in filename:
+            break
     # 4. Generate and write the book Manifest.json (IIIF Presentation v3)
     manifest = {
         "@context": "http://iiif.io",
