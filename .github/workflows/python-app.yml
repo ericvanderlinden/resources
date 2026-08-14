@@ -24,6 +24,13 @@ jobs:
       run: pip install pyvips pandas
     - name: Run conversion script
       run: python scripts/process_iiif.py
+    - name: Commit generated files
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add retro/heinsius/heinsius_01_GS158/public/
+        git commit -m "Regenerate IIIF manifest and tiles" || echo "No changes to commit"
+        git push
     - name: Debug - list generated files
       run: |
         echo "Current directory:"
