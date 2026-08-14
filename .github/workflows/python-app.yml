@@ -28,7 +28,7 @@ jobs:
       run: |
         echo "Current directory:"
         pwd
-        echo "Contents of public/:"
-        find public/ -type f 2>&1 || echo "public/ does not exist"
+        echo "Contents of retro/heinsius/heinsius_01_GS158/public/:"
+        find retro/heinsius/heinsius_01_GS158/public/ -type f 2>&1 || echo "public/ does not exist"
         echo "Git status:"
         git status
