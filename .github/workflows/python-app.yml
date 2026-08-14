@@ -24,3 +24,11 @@ jobs:
       run: pip install pyvips pandas
     - name: Run conversion script
       run: python scripts/process_iiif.py
+    - name: Debug - list generated files
+      run: |
+        echo "Current directory:"
+        pwd
+        echo "Contents of public/:"
+        find public/ -type f 2>&1 || echo "public/ does not exist"
+        echo "Git status:"
+        git status
