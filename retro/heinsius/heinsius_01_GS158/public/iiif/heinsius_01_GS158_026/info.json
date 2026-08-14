@@ -1,0 +1,9 @@
+{
+  "@context": "http://iiif.io",
+  "url": "http://jbw.do.local/retro/heinsius/heinsius_01_GS158/public/iiif/heinsius_01_GS158_026/full/full/0/default.webp",
+  "type": "image",
+  "protocol": "http://iiif.io",
+  "profile": "level0",
+  "width": 1038,
+  "height": 1580
+}
