@@ -1,1 +1,2 @@
 # no requierments listed at the moment. 
+# list modules of python that need to be installed 
