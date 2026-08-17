@@ -1,0 +1,9 @@
+# Briefwisseling van Anthonie Heinsius 1702-1720
+## Digitalisering
+De boeken zijn toegankelijk gemaakt door ze te scannen en met behulp van OCR (Optical Character Recognition) doorzoekbaar te maken.   
+
+## Inleiding
+Bewerkt door A.J. Veenendaal jr.; met medewerking van C. Hogenkamp en M.T.A. Schouten (jaar van publicatie: 1976-2001)  
+In negentien delen is de omvangrijke correspondentie uitgegeven van de Hollandse raadpensionaris Anthonie Heinsius (1641-1720). Omdat Heinsius na de dood van stadhouder-koning Willem III in 1702 in de praktijk de leider werd van de buitenlandse politiek van de Republiek der Verenigde Nederlanden, is zijn briefwisseling van grote waarde. Hij vormde met de hertog van Marlborough en Eugenius van Savoye het driemanschap dat de leiding gaf aan de geallieerde politiek tegenover Frankrijk en Spanje tijdens de Spaanse Successieoorlog. In zijn briefwisseling zijn vrijwel alle toenmalige politieke en militaire leiders vertegenwoordigd, en omdat de raadpensionaris zijn brieven in zeer goede orde heeft bewaard, geeft deze uitgave een schat aan gegevens over de periode.  
+Alle brieven van en aan Heinsius - bijna 24.000 stuks - worden afgedrukt, in extenso, in samenvatting of in een lijst. Het eigen archief van Heinsius is daarbij de belangrijkste bron, maar ook zijn vele brieven gevonden in andere archieven in binnen- en buitenland.  
+De uitgave kan bijdragen aan een betere beoordeling van de rol van de Republiek tijdens de eerste jaren van de 18e eeuw, speciaal op het terrein van de buitenlandse politieke en de oorlogvoering, terwijl ook de binnenlandse zaken ruimschoots aan de orde komen. De nadruk die, door de bestaande overvloedige beschikbaarheid van bronnen, in de historiografie is komen te liggen op de Engelse en Oostenrijkse kant van het bondgenootschap, kan door de uitgave van de Heinsius-correspondentie enigszins worden rechtgetrokken.
