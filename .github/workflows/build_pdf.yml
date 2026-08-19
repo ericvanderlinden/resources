@@ -19,7 +19,7 @@ jobs:
       with:
         python-version: '3.12'
     - name: Install Python dependencies
-      run: pip install pandas PIL pypdf
+      run: pip install pandas pillow pypdf
     - name: Run build pdf from tiff script
       run: python scripts/build_pdf.py
     - name: Commit generated files
