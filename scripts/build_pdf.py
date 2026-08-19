@@ -87,7 +87,7 @@ def main():
 
     # 1. Load CSV
     print("Loading CSV …")
-    df = pd.read_csv(CSV_FILE)
+    df = pd.read_csv(CSV_FILE,nrows=304)
     print(f"  {len(df)} rows loaded")
 
     # 2. Create all PDFs (in CSV order = document order)
