@@ -19,7 +19,7 @@ jobs:
       with:
         python-version: '3.12'
     - name: Install Python dependencies
-      run: pip install markdoen
+      run: pip install markdown
     - name: Run create index html from readme md script
       run: python scripts/create_index_html.py
     - name: Commit generated files
