@@ -29,7 +29,7 @@ jobs:
         git add retro/heinsius/heinsius_01_GS158/
         git add retro/heinsius/
         git add retro/
-        git commit -m "Generate PDF" || echo "No changes to commit"
+        git commit -m "Generate index html files from markdown" || echo "No changes to commit"
         git push
     - name: Debug - list generated files
       run: |
@@ -38,4 +38,4 @@ jobs:
         echo "Contents of retro/:"
         find retro/ -type f 2>&1 || echo "retro/ does not exist"
         echo "Git status:"
-        git status# start
+        git status
