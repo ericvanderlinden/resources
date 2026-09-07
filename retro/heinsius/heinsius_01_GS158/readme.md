@@ -11,4 +11,4 @@ Uitgave van brieven van en aan de raadpensionaris van Holland, Anthonie Heinsius
 Dit boek is beschikbaar als:  
 [iiiFViewer](https://ericvanderlinden.github.io/resources/retro/heinsius/heinsius_01_GS158/public/)  
 [PDF met inhoudsopgave](https://ericvanderlinden.github.io/resources/retro/heinsius/heinsius_01_GS158/products/heinsius_01_GS158.pdf)
-
+[ePUB met inhoudsopgave](https://ericvanderlinden.github.io/resources/retro/heinsius/heinsius_01_GS158/products/heinsius_01_GS158.epub)
