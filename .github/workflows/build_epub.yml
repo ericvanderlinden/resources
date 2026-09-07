@@ -36,4 +36,4 @@ jobs:
         echo "Contents of retro/heinsius/heinsius_01_GS158/products/:"
         find retro/heinsius/heinsius_01_GS158/products/ -type f 2>&1 || echo "public/ does not exist"
         echo "Git status:"
-        git status# start
+        git status
