@@ -19,7 +19,7 @@ jobs:
       with:
         python-version: '3.12'
     - name: Install Python dependencies
-      run: pip install ebooklib pathlib
+      run: pip install ebooklib pathlib pandas uuid
     - name: Run build pdf from tiff script
       run: python scripts/build_epub.py
     - name: Commit generated files
