@@ -9,5 +9,7 @@ Alle brieven van en aan Heinsius - bijna 24.000 stuks - worden afgedrukt, in ext
 De uitgave kan bijdragen aan een betere beoordeling van de rol van de Republiek tijdens de eerste jaren van de 18e eeuw, speciaal op het terrein van de buitenlandse politieke en de oorlogvoering, terwijl ook de binnenlandse zaken ruimschoots aan de orde komen. De nadruk die, door de bestaande overvloedige beschikbaarheid van bronnen, in de historiografie is komen te liggen op de Engelse en Oostenrijkse kant van het bondgenootschap, kan door de uitgave van de Heinsius-correspondentie enigszins worden rechtgetrokken.
 
 Direct naar:  
-[Deel I](heinsius_01_GS158/): 19 maart - 31 december 1702. - 1976. 
-Rijks Geschiedkundige Publicatiën, Grote Serie nr. 158
+[Deel I](heinsius_01_GS158/): 19 maart - 31 december 1702. - 1976.  
+Rijks Geschiedkundige Publicatiën, Grote Serie nr. 158.  
+
+Onderdeel van [Retro boeken](../retro)
