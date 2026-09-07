@@ -12,4 +12,4 @@ Direct naar:
 [Deel I](heinsius_01_GS158/): 19 maart - 31 december 1702. - 1976.  
 Rijks Geschiedkundige Publicatiën, Grote Serie nr. 158.  
 
-Onderdeel van [Retro boeken](../retro)
+Onderdeel van [Retro boeken](../)
