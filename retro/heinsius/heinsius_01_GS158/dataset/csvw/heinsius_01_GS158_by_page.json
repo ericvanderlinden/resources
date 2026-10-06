@@ -243,28 +243,38 @@
                     },
                     {
                         "virtual": true,
+                        "name": "fabio_page",
+                        "titles": "fabio_page",
                         "propertyUrl": "rdf:type",
                         "valueUrl": "http://purl.org/spar/fabio/Page"
                     },
                     {
                         "virtual": true,
+                        "name": "fabio_page_of",
+                        "titles": "fabio_page_of",
                         "propertyUrl": "http://purl.org/spar/fabio/isPageOf",
                         "valueUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/dataset/csvw/heinsius_01_GS158_by_page.tsv"
                     },
                     {
                         "virtual": true,
+                        "name": "type_mediaobject",
+                        "titles": "type_mediaobject",
                         "aboutUrl": "{canonical_url}",
                         "propertyUrl": "rdf:type",
                         "valueUrl": "schema:MediaObject"
                     },
                     {
                         "virtual": true,
+                        "name": "type_pdf",
+                        "titles": "type_pdf",
                         "aboutUrl": "{canonical_url}",
                         "propertyUrl": "schema:encodingFormat",
                         "default": "application/pdf"
                     },
                     {
                         "virtual": true,
+                        "name": "has_format",
+                        "titles": "has_format",
                         "aboutUrl": "{canonical_url}",
                         "propertyUrl": "dc:relation",
                         "valueUrl": "http://purl.org/dc/terms/hasFormat",
@@ -272,18 +282,24 @@
                     },
                     {
                         "virtual": true,
+                        "name": "fabio_letter",
+                        "titles": "fabio_letter",
                         "aboutUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/item/{item_number}",
                         "propertyUrl": "rdf:type",
                         "valueUrl": "http://purl.org/spar/fabio/Letter"
                     },
                     {
                         "virtual": true,
+                        "name": "id_contains_item_number",
+                        "titles": "id_contains_item_number",
                         "aboutUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/page/{id}",
                         "propertyUrl": "http://www.essepuntato.it/2008/12/pattern#contains",
                         "valueUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/item/{item_number}"
                     },
                     {
                         "virtual": true,
+                        "name": "item_number_contained_by_id",
+                        "titles": "item_number_contained_by_id",
                         "aboutUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/item/{item_number}",
                         "propertyUrl": "http://www.essepuntato.it/2008/12/pattern#isContainedBy",
                         "valueUrl": "https://herwaarts.nl/resources/rgp/heinsius/heinsius_01_GS158/heinsius_01_GS158_by_page/page/{id}"
