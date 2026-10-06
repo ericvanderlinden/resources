@@ -18,7 +18,7 @@ workspace = os.getenv("GITHUB_WORKSPACE", "..")
 GROUP = "retro"
 SERIES = "heinsius"
 BOOK = "heinsius_01_GS158"
-JSON_URL =  https://raw.githubusercontent.com/ericvanderlinden/resources/main/retro/heinsius/heinsius_01_GS158/dataset/csvw/heinsius_01_GS158_by_page.json
+JSON_URL =  "https://raw.githubusercontent.com/ericvanderlinden/resources/main/retro/heinsius/heinsius_01_GS158/dataset/csvw/heinsius_01_GS158_by_page.json"
 
 OUTPUT_PRODUCTS = os.path.join(workspace, "{}/{}/{}/products".format(GROUP,SERIES,BOOK))
 
