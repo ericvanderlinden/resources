@@ -19,7 +19,7 @@ jobs:
       with:
         python-version: '3.12'
     - name: Install Python dependencies
-      run: pip install csvw_functions rdflib
+      run: pip install csvw-functions==0.0.0 rdflib
     - name: Run Build turtle from csvw script
       run: python scripts/create_turtle.py
     - name: Commit generated files
