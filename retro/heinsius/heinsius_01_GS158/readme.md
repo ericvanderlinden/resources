@@ -12,5 +12,6 @@ Dit boek is beschikbaar als:
 [iiiFViewer](https://ericvanderlinden.github.io/resources/retro/heinsius/heinsius_01_GS158/public/)  
 [PDF met inhoudsopgave](https://ericvanderlinden.github.io/resources/retro/heinsius/heinsius_01_GS158/products/heinsius_01_GS158.pdf)  
 [ePUB met inhoudsopgave](https://ericvanderlinden.github.io/resources/retro/heinsius/heinsius_01_GS158/products/heinsius_01_GS158.epub)  
+[RDF in turtle notation](https://ericvanderlinden.github.io/resources/retro/heinsius/heinsius_01_GS158/products/heinsius_01_GS158.ttl)  
 
 Is onderdeel van [Heinsius](../)
